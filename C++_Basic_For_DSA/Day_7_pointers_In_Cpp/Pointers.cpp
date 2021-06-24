@@ -7,7 +7,10 @@ using namespace std;
 int main()
 {
     int a=2;
-    int* b=&a;
+    int *b=&a;
+
+    // Syntax
+    // type *var_name;
 
     // &--->address operator or address at operator
     // *---->deferance or value of or value at operator
@@ -17,7 +20,7 @@ int main()
 
     cout<<"Store value of b is:"<<*b<<endl;
 
-    int** c=&b;
+    int **c=&b;
 
     cout<<"Address of b is:"<<c<<endl;
     cout<<"Address of b is:"<<&b<<endl;
