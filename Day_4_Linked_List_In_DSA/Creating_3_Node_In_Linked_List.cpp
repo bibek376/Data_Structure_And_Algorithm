@@ -32,16 +32,16 @@ int main()
     current->next=NULL;
     head->next=current;
 
-    // // Creating a Third node
-    // node *current=new node();
-    // current->data=6;
-    // current->next=NULL;
-    // head->next->next=current;
+    // Creating a Third node
+    current=new node();
+    current->data=6;
+    current->next=NULL;
+    head->next->next=current;
 
-    node *second=new node();
-    second->data=6;
-    second->next=NULL;
-    current->next=second;
+    // node *second=new node();
+    // second->data=6;
+    // second->next=NULL;
+    // current->next=second;
 
     // cout<<current->next<<endl;
     display(head);

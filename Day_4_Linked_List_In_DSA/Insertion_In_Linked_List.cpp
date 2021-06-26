@@ -9,7 +9,7 @@ class node{
     node * link;//Self refrencing structure
 };
 
-void Insert_At_Last(node *ptr,int new_data){
+node *Insert_At_Last(node *ptr,int new_data){
     node *new_node=new node();
 
     new_node->data=new_data;
@@ -19,6 +19,8 @@ void Insert_At_Last(node *ptr,int new_data){
         ptr=ptr->link;
     }
     ptr->link=new_node;
+
+    return ptr;
 }
 
 void Print_Linked_List(node *ptr){
