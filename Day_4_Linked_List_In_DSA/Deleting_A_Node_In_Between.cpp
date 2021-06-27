@@ -13,6 +13,7 @@ node *Deleting_A_Node_In_Between(node *head,int index){
     int i=0;
     while(i !=index-1){
         p=p->link;
+        i++;
     }
     node *q=p->link;
     p->link=q->link;

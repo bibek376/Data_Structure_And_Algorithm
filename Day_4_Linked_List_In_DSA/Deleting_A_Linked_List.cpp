@@ -36,6 +36,7 @@ node *Deleting_In_Between_With_Index(node *head,int index){
     int i=0;
     while(i !=index-1){
         p=p->next;
+        i++;
     }
     node *q=p->next;
     p->next=q->next;
@@ -57,6 +58,17 @@ node *Deleting_A_Node_With_Value(node *head,int value){
     }
     else{
         cout<<"Value not found"<<endl;
+    }
+    return head;
+}
+
+//Complexity is O(n)
+node *Deleting_Entire_Linked_List(node *head){
+    node *ptr=head;
+    while(head !=NULL){
+        head=head->next;
+        free(ptr);
+        ptr=head;
     }
     return head;
 }
@@ -95,7 +107,8 @@ int main()
     cout<<"Press 2 For Deleting a Last node"<<endl;
     cout<<"Press 3 For Deleting a node With index"<<endl;
     cout<<"Press 4 For Deleting a node By Value"<<endl;
-    cout<<"Press 5 For Exit"<<endl;
+    cout<<"Press 5 For Deleting Entire Linked List"<<endl;
+    cout<<"Press 6 For Exit"<<endl;
     int num;
     cout<<"Make Your Choice ?"<<endl;
     cin>>num;
@@ -117,8 +130,11 @@ int main()
         break;
 
         case 5:
-        cout<<"Thank You !"<<endl;
+        head=Deleting_Entire_Linked_List(head);
+        break;
 
+        case 6:
+        cout<<"Thank You !"<<endl;
     }
     cout<<"After Deleting a node:"<<endl;
     Display(head);
