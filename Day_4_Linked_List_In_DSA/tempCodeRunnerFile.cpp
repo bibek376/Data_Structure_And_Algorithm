@@ -1,1 +1,1 @@
-head=Insert_A_Node_At_Beginning(head,3);
+cout<<"After Deleting a node:"<<endl;

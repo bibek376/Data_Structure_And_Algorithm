@@ -8,6 +8,7 @@ class node{
     node *link;
 };
 
+// Complexity is O(1)
 node *Insert_A_Node_At_Beginning(node *head,int new_data){
     node *new_node=new node();
     new_node->data=new_data;
@@ -16,6 +17,7 @@ node *Insert_A_Node_At_Beginning(node *head,int new_data){
     return head;
 }
 
+// Complexity is O(n)
 node *Insert_A_Node_At_Last(node *ptr,int new_data){
     node *temp=new node();
     temp->data=67;
@@ -27,6 +29,7 @@ node *Insert_A_Node_At_Last(node *ptr,int new_data){
     return ptr;
 }
 
+// Complexity is O(n)
 node *Insert_Between_Two_node(node *head,int new_data,int index){
     node *ptr=head;
     node *temp=new node();
@@ -41,6 +44,7 @@ node *Insert_Between_Two_node(node *head,int new_data,int index){
     return head;
 }
 
+// Complexity is O(1)
 node *Insert_After_A_Node(node *head,node *position,int data){
     node *new_node=new node();
     new_node->data=63;
