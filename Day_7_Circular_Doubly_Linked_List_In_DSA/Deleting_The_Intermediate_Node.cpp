@@ -18,6 +18,7 @@ node *Add_Empty(node *tail,int data){
     return temp;
 }
 
+//O(1) Time complexity
 node *Add_From_End(node *tail,int data){
     node *temp=new node();
     temp->data=data;
