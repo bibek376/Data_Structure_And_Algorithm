@@ -44,7 +44,7 @@ int main()
     }
     cout<<endl;
 
-     //For Deleting tge Element
+     //Deleting the Element
     for(int i=8;i>1;i--){
         Delete(Heap_Arr,i);
     }
