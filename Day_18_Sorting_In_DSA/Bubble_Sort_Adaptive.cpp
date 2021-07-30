@@ -34,9 +34,9 @@ int main()
 {
     int Arr[] = {1, 2, 4, 6, 8, 9,40,57,99,305};
     int size = sizeof(Arr) / sizeof(Arr[0]);
-    cout << "Before Sorting " << endl;
+    cout << "Before Bubble Sorting " << endl;
     Display(Arr, size);
-    cout << "After Sorting " << endl;
+    cout << "After Bubble Sorting " << endl;
     Bubble_Sort_As_Adaptive(Arr, size);
     Display(Arr, size);
     return 0;

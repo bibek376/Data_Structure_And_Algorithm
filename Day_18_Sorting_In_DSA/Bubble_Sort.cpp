@@ -23,11 +23,11 @@ int main()
 {
     int Arr[] = {5, 9, 3, 2, 4};
     int size = sizeof(Arr) / sizeof(Arr[0]);
-    cout<<"Before Sorting "<<endl;
+    cout<<"Before Bubble Sorting "<<endl;
     Display(Arr,size);
     cout<<endl;
     Bubble_Sort(Arr, size);
-    cout<<"After Sorting "<<endl;
+    cout<<"After Bubble Sorting "<<endl;
     Display(Arr,size);
     cout<<endl;
     return 0;
