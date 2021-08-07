@@ -18,7 +18,6 @@ void Insert_In_Heap(int Arr[],int n){
 }
 
 
-
 int main()
 {
     int Heap_Arr[]={0,40,35,15,30,10,12,6,5,20,50};
