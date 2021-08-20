@@ -22,12 +22,13 @@ void display(node *head){
 int main()
 {
     // Creating a First Node
-    node *head=new node(); //Allocate a memory dynamically from heap
+    //Allocate a memory dynamically from heap
+    node *head=new node(); 
     head->data=2;
     head->next=NULL;
 
     // Creating a second node 
-    node *current=new node();//Allocate a memory dynamically
+    node *current=new node();
     current->data=4;
     current->next=NULL;
     head->next=current;
