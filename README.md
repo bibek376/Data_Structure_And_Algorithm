@@ -7,3 +7,8 @@ STEPS:-
 2. Read Theory Part First...
  
 3. Follow the Day Wise Time Table....
+
+
+# Feedback
+
+If you have any feedback, please reach out to me at cu.18bcs6728@gmail.com
